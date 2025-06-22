@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px); 
+  z-index: -1;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.search-content {
+  display: flex;
+  justify-content: center;
+}
